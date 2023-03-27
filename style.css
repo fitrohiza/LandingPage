@@ -95,7 +95,6 @@
 
 .navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
 .navbar-menu li:hover > a {
   color: #007299;
 }
