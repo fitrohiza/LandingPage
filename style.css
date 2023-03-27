@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Start Hero Style */
+.hero-banner {
+  /* background: linear-gradient(to bottom right, #56e0e0, #007299); */
+  /* background-image: url("https://i.postimg.cc/mrvwbzrr/young-mother-playing-with-lovely-son-bedroom.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  /* position: relative; */
+  width: 100%;
+  height: 500px;
+  /* background-size: cover; */
+  background-position: center;
+}
+
+.hero img {
+  width: fit-content;
+  justify-content: center;
+}
+
+.hero-banner img {
+  width: 100%;
+}
+
+.hero-content {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  text-align: start;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  padding: 15px 25px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(to bottom right, #56e0e0, #007299);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* End Hero Style */
+
+/* Start Navbar style */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  color: rgb(97, 90, 90);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  transition: background-color 0.3s ease-in-out;;
+}
+
+/* Logo style */
+.navbar-logo img {
+  height: 30px;
+}
+
+/* Menu style */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 20px;
+}
+
+.navbar-menu li a {
+  color: rgb(97, 90, 90);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar-menu li:hover > a {
+  color: #007299;
+}
+
+/* Button stye */
+.navbar-button {
+  background: linear-gradient(to bottom right, #56e0e0, #007299);
+  color: #fcf8f8;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 30px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-button:hover {
+  background-color: grey;
+}
