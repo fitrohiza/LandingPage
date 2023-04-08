@@ -7,43 +7,101 @@
     <title>NutriSense</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/30b2892a0a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <section id="home">
-      <header class="hero-banner">
-        <img
-          src="https://i.postimg.cc/mrvwbzrr/young-mother-playing-with-lovely-son-bedroom.jpg"
-          alt="Gambar Banner"
-        />
-        <div class="hero-content">
-          <h2>NutriSense</h2>
-          <p>Langkah Kecil Mencegah Dampak Besar, Let's Join Us!</p>
-          <button>Sign Up</button>
-        </div>
-      </header>
       <nav class="navbar">
         <div class="navbar-logo">
           <img
-            src="https://i.postimg.cc/nz7vdr0W/Layer1005.png"
-            alt="Gambar NutriSense"
+            src="https://i.postimg.cc/CMsbyVFH/logo.png"
+            alt="Logo NutriSense"
           />
         </div>
         <ul class="navbar-menu">
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#About">About</a></li>
+          <li><a class="active" href="#home">Beranda</a></li>
+          <li><a href="#About">Tentang</a></li>
           <li><a href="#Article">Artikel</a></li>
-          <li><a href="#">Cek Stunting</a></li>
-          <li><a href="#">Forum Diskusi</a></li>
+          <li><a href="#" onclick="popupRun()">Cek Stunting</a></li>
+          <li><a href="#" onclick="popupRun()">Forum Diskusi</a></li>
         </ul>
-        <button class="navbar-button">Sign Up</button>
+        <div class="navbar-button">
+          <button class="btn-login">Login</button>
+          <button class="nav-btn">Get Started</button>
+        </div>
       </nav>
+
+      <div class="hero-banner">
+        <div class="overlay">
+          <h2>Welcome to NutriSense</h2>
+          <p>Langkah Kecil Mencegah Dampak Besar, Let's Join Us!</p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <img
+          src="https://i.postimg.cc/XYFyZ8dC/hero-app.png"
+          alt="hero-banner"
+        />
+      </div>
+
+      <div class="card-container">
+        <div class="card">
+          <i class="fa-solid fa-video"></i>
+          <h3>Video</h3>
+          <p>
+            Males membaca? Tenang aja, kamu bisa dapatkan informasi tanpa
+            membaca disini
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fa fa-stethoscope"></i>
+          <h3>Informasi</h3>
+          <p>
+            Dapatkan informasi stunting, pencegahan dan pengobatan stunting
+            lengkap disini.
+          </p>
+        </div>
+
+        <div class="card">
+          <i class="fa fa-comments"></i>
+          <h3>Diskusi</h3>
+          <p>
+            Anda dapat berdiskusi dengan seluruh orang di Indonesia, ajukan
+            pertanyaan atau jawab pertanyaan
+          </p>
+        </div>
+      </div>
     </section>
+
     <section id="About">
-      <h1>About</h1>
-    </section>
-    <section id="Article">
-      <h1>Artikel</h1>
+      <main>
+        <div class="about">
+          <img
+            src="https://i.postimg.cc/Vkt6Nkns/about.png"
+            alt="gambar-nutrisense"
+          />
+          <div class="about-info">
+            <h1>Tentang Kami</h1>
+            <p>
+              Nutrisense adalah platform yang didedikasikan untuk memberikan
+              informasi dan memfasilitasi diskusi seputar masalah stunting pada
+              anak, seperti masalah kesehatan yang sering terjadi karena
+              kekurangan gizi. Melalui Nutrisense, pengguna dapat memperoleh
+              informasi terbaru tentang stunting serta berinteraksi dengan para
+              ahli dan komunitas untuk pendapatkan solusi dan upaya pencegahan
+              stunting yang efektif.
+            </p>
+          </div>
+        </div>
+      </main>
     </section>
   </body>
 </html>
