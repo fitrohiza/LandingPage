@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NutriSense</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/30b2892a0a.js"
       crossorigin="anonymous"
@@ -29,13 +29,34 @@
         <ul class="navbar-menu">
           <li><a class="active" href="#home">Beranda</a></li>
           <li><a href="#About">Tentang</a></li>
-          <li><a href="#Article">Artikel</a></li>
+          <li><a href="#article">Artikel</a></li>
           <li><a href="#" onclick="popupRun()">Cek Stunting</a></li>
-          <li><a href="#" onclick="popupRun()">Forum Diskusi</a></li>
+          <li><a href="#forum">Forum Diskusi</a></li>
         </ul>
         <div class="navbar-button">
-          <button class="btn-login">Login</button>
-          <button class="nav-btn">Get Started</button>
+          <button id="loginBtn">Login</button>
+          <div id="loginModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Form Login</h2>
+              <form>
+                <label for="username">Username</label><br />
+                <input type="text" id="username" name="username" /><br />
+                <label for="password">Password</label><br />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                /><br /><br />
+                <input type="submit" value="Login" class="btn-login" />
+                <div class="info-registrasi">
+                  <p>Belum punya akun?</p>
+                  <a href="#"><strong>Registrasi Sekarang</strong> </a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <button id="navBtn">Get Started</button>
         </div>
       </nav>
 
@@ -96,12 +117,101 @@
               anak, seperti masalah kesehatan yang sering terjadi karena
               kekurangan gizi. Melalui Nutrisense, pengguna dapat memperoleh
               informasi terbaru tentang stunting serta berinteraksi dengan para
-              ahli dan komunitas untuk pendapatkan solusi dan upaya pencegahan
+              ahli dan komunitas untuk mendapatkan solusi dan upaya pencegahan
               stunting yang efektif.
             </p>
           </div>
         </div>
       </main>
     </section>
+
+    <section id="article">
+      <div class="article-intro">
+        <h1>Artikel</h1>
+      </div>
+      <article id="article-container">
+        <div class="card-article">
+          <img
+            src="https://i.postimg.cc/dVRYPq4Z/article1.jpg"
+            alt="Card Image"
+          />
+          <div class="article-content">
+            <h3>Peran Orang Tua dalam Pencegahan Stunting</h3>
+            <p>
+              Pentingnya peran orang tua dalam pencegahan stunting, termasuk
+              cara memilih makanan yang tepat.
+            </p>
+            <button>Selengkapnya</button>
+          </div>
+        </div>
+        <div class="card-article">
+          <img
+            src="https://i.postimg.cc/15QkPkTk/article2.jpg"
+            alt="Card Image"
+          />
+          <div class="article-content">
+            <h3>Keterkaitan Stunting dengan Keterlambatan Perkembangan Anak</h3>
+            <p>
+              Faktor-faktor yang mempengaruhi perkembangan kognitif dan fisik
+              anak yang mengalami stunting
+            </p>
+            <button>Selengkapnya</button>
+          </div>
+        </div>
+        <div class="card-article">
+          <img
+            src="https://i.postimg.cc/G2DfnKj3/article3.jpg"
+            alt="Card Image"
+          />
+          <div class="article-content">
+            <h3>Pengaruh Faktor Lingkungan pada Stunting di Indonesia</h3>
+            <p>
+              Dampak dari faktor lingkungan seperti sanitasi, akses air bersih,
+              dan kebersihan lingkungan terhadap stunting di Indonesia
+            </p>
+            <button>Selengkapnya</button>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section id="forum">
+      <h1>Topik Diskusi</h1>
+      <div class="forum-diskusi">
+        <div class="forum-card">
+          <img
+            class="grup1"
+            src="https://i.postimg.cc/SsBWYXvD/user0.jpg"
+            alt="user 1"
+          />
+        </div>
+        <div class="forum-card">
+          <img
+            class="grup2"
+            src="https://i.postimg.cc/5yPhg3qx/user1.jpg"
+            alt="user 1"
+          />
+        </div>
+        <div class="forum-card">
+          <img src="https://i.postimg.cc/bN9T7JKt/user2.jpg" alt="user 2" />
+        </div>
+        <div class="forum-card">
+          <img
+            class="grup2"
+            src="https://i.postimg.cc/jqzQf2qF/user3.jpg"
+            alt="user 3"
+          />
+        </div>
+        <div class="forum-card">
+          <img
+            class="grup1"
+            src="https://i.postimg.cc/fRNBgP5B/user4.jpg"
+            alt="user 1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
   </body>
 </html>
