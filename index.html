@@ -110,8 +110,8 @@
             alt="gambar-nutrisense"
           />
           <div class="about-info">
-            <h1>Tentang Kami</h1>
-            <p>
+            <h2>Tentang Kami</h2>
+            <p id="description">
               Nutrisense adalah platform yang didedikasikan untuk memberikan
               informasi dan memfasilitasi diskusi seputar masalah stunting pada
               anak, seperti masalah kesehatan yang sering terjadi karena
@@ -127,7 +127,8 @@
 
     <section id="article">
       <div class="article-intro">
-        <h1>Artikel</h1>
+        <h2>Artikel</h2>
+        <p>Temukan artikel menarik disini</p>
       </div>
       <article id="article-container">
         <div class="card-article">
@@ -176,42 +177,81 @@
     </section>
 
     <section id="forum">
-      <h1>Topik Diskusi</h1>
       <div class="forum-diskusi">
-        <div class="forum-card">
-          <img
-            class="grup1"
-            src="https://i.postimg.cc/SsBWYXvD/user0.jpg"
-            alt="user 1"
-          />
+        <div class="forum-content">
+          <div class="forum-intro">
+            <h1>Topik Diskusi</h1>
+            <br>
+            <p>
+              Apa saja yang harus saya perhatikan dalam memberikan makanan untuk
+              anak yang mengalami stunting?
+            </p>
+          </div>
+          <div class="all-card">
+            <div class="forum-card">
+              <img
+                class="grup1"
+                src="https://i.postimg.cc/SsBWYXvD/user0.jpg"
+                alt="user 1"
+              />
+            </div>
+            <div class="forum-card">
+              <img
+                class="grup2"
+                src="https://i.postimg.cc/5yPhg3qx/user1.jpg"
+                alt="user 1"
+              />
+            </div>
+            <div class="forum-card">
+              <img src="https://i.postimg.cc/bN9T7JKt/user2.jpg" alt="user 2" />
+            </div>
+            <div class="forum-card">
+              <img
+                class="grup2"
+                src="https://i.postimg.cc/jqzQf2qF/user3.jpg"
+                alt="user 3"
+              />
+            </div>
+            <div class="forum-card">
+              <img
+                class="grup1"
+                src="https://i.postimg.cc/fRNBgP5B/user4.jpg"
+                alt="user 1"
+              />
+            </div>
+          </div>
         </div>
-        <div class="forum-card">
-          <img
-            class="grup2"
-            src="https://i.postimg.cc/5yPhg3qx/user1.jpg"
-            alt="user 1"
-          />
-        </div>
-        <div class="forum-card">
-          <img src="https://i.postimg.cc/bN9T7JKt/user2.jpg" alt="user 2" />
-        </div>
-        <div class="forum-card">
-          <img
-            class="grup2"
-            src="https://i.postimg.cc/jqzQf2qF/user3.jpg"
-            alt="user 3"
-          />
-        </div>
-        <div class="forum-card">
-          <img
-            class="grup1"
-            src="https://i.postimg.cc/fRNBgP5B/user4.jpg"
-            alt="user 1"
-          />
+        <div class="forum-quote">
+          <div class="quote-intro">
+            <i class="fa-solid fa-comment-dots"></i>
+            <h2>Ribuan Orang Telah Bergabung Dengan Forum Diskusi</h2>
+            <button class="btn">Bergabung</button>
+          </div>    
         </div>
       </div>
     </section>
 
-    <footer></footer>
+      <form id="my-form">
+      </form>
+
+    <footer>
+      <ul class="icons">
+          <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+      </ul>
+      <ul class="menu">
+              <li><a href="#home">Beranda</a></li>
+              <li><a href="#About">Tentang</a></li>
+              <li><a href="#article">Artikel</a></li>
+              <li><a href="#" onclick="popupRun()">Cek Stunting</a></li>
+              <li><a href="#forum">Forum Diskusi</a></li>
+      </ul>
+          <div class="footer-copyright">
+              <p>Copyright @ 2023 NutriSense</p>
+          </div>
+  </footer>
   </body>
 </html>
