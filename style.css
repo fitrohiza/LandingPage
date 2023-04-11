@@ -265,50 +265,6 @@ html {
   padding-bottom: 20px;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto;
-  padding: 20px;
-  width: 22%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-content > form {
-  padding-top: 10px;
-  font-size: 18px;
-}
-
-input {
-  width: 95%;
-  border-radius: 10px;
-  padding: 5px;
-  font-size: 18px;
-}
-
 .btn-login {
   background-color: #5e17eb;
   border: none;
@@ -339,7 +295,7 @@ input {
   margin-bottom: 10%;
 }
 
-h2{
+h2 {
   padding-bottom: 10px;
 }
 
@@ -399,36 +355,35 @@ button:hover {
   background-color: #555;
 }
 
-#forum{
+#forum {
   background-color: #dbcdf5;
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 3%;
 }
 
-.forum-diskusi{
+.forum-diskusi {
   display: flex;
   justify-content: space-around;
 }
 
-.forum-intro{
+.forum-intro {
   text-align: center;
   margin-left: 10%;
   font-size: 16px;
 }
 
-.forum-content{
+.forum-content {
   margin-right: 30%;
-  
 }
 
-.all-card{
+.all-card {
   display: flex;
   margin: 0 20%;
   align-items: center;
 }
 
-.forum-card{
+.forum-card {
   margin-top: 5%;
   margin-right: 15px;
 }
@@ -439,38 +394,37 @@ button:hover {
   border-radius: 50%;
 }
 
-.forum-card > h3{
+.forum-card > h3 {
   font-size: 14px;
   text-align: center;
 }
 
-.forum-card > .grup1{
+.forum-card > .grup1 {
   width: 50px;
   height: 50px;
   opacity: 70%;
 }
 
-.forum-card > .grup2{
+.forum-card > .grup2 {
   width: 70px;
   height: 70px;
   opacity: 90%;
 }
 
-
-.forum-quote{
+.forum-quote {
   background-color: #926cdf;
   border-bottom-left-radius: 80px;
   border-top-left-radius: 80px;
 }
 
-.quote-intro{
+.quote-intro {
   text-align: center;
   align-items: center;
   color: #f5f2f2;
   padding: 30px;
 }
 
-.quote-intro i{
+.quote-intro i {
   font-size: 28px;
   padding: 20px;
   background-color: #5e17eb;
@@ -478,12 +432,12 @@ button:hover {
   border-radius: 50%;
 }
 
-.quote-intro h2{
+.quote-intro h2 {
   font-size: 18px;
   padding-bottom: 20px;
 }
 
-footer{
+footer {
   background-color: #1e0f3b;
   text-align: center;
   text-transform: uppercase;
@@ -491,13 +445,13 @@ footer{
   margin-top: auto;
 }
 
-footer li{
+footer li {
   list-style: none;
   margin: 10px;
   display: inline-block;
 }
 
-.icons a{
+.icons a {
   background: #926cdf;
   color: #1e0f3b;
   padding: 14px;
@@ -506,29 +460,80 @@ footer li{
   display: flex;
   text-decoration: none;
 }
-.icons a:hover{
+.icons a:hover {
   color: #ffffff;
   transition: 0.5s;
 }
 
-.menu a{
+.menu a {
   font-size: 14px;
   text-decoration: none;
   color: #ffffff;
   text-transform: capitalize;
 }
-.menu a:hover{
+.menu a:hover {
   color: #926cdf;
   transition: 0.5s;
 }
 
-.footer-copyright{
+.cb-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 2px;
+}
+
+label {
+  font-size: 16px;
+}
+
+#my-form {
+  max-width: 50%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#status{
+  height: 20px;
+  margin-right: 10px;
+}
+
+#my-form > input{
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 96%;
+}
+
+.button-cek{
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+#check{
+  font-size: 14px;
+}
+
+#submit-form{
+  width: 100%;
+  padding: 10px;
+  justify-content: end;
+}
+
+.footer-copyright {
   color: #ffffff;
   padding: 15px;
   margin-top: 30px;
   text-transform: capitalize;
 }
 
-.footer-copyright p{
+.footer-copyright p {
   margin-bottom: 0px;
 }

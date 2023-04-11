@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NutriSense</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/30b2892a0a.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
-
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <!-- Tambahkan kode kalian di sini -->
     <section id="home">
       <nav class="navbar">
         <div class="navbar-logo">
@@ -35,27 +25,6 @@
         </ul>
         <div class="navbar-button">
           <button id="loginBtn">Login</button>
-          <div id="loginModal" class="modal">
-            <div class="modal-content">
-              <span class="close">&times;</span>
-              <h2>Form Login</h2>
-              <form>
-                <label for="username">Username</label><br />
-                <input type="text" id="username" name="username" /><br />
-                <label for="password">Password</label><br />
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                /><br /><br />
-                <input type="submit" value="Login" class="btn-login" />
-                <div class="info-registrasi">
-                  <p>Belum punya akun?</p>
-                  <a href="#"><strong>Registrasi Sekarang</strong> </a>
-                </div>
-              </form>
-            </div>
-          </div>
           <button id="navBtn">Get Started</button>
         </div>
       </nav>
@@ -232,11 +201,19 @@
     </section>
 
       <form id="my-form">
+        <input id="name" type="text">
+        <input id="city" type="text">
+        <input id="email" type="email">
+        <input id="zip-code" type="number">
+        <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+        <input id="status" type="checkbox">
+        <button id="submit-form" type="submit">Submit</button>
+        <div id="warning"></div>
       </form>
 
     <footer>
       <ul class="icons">
-          <li><a href="#"><i class="fa-brands fa-whatsapp"></i></i></a></li>
+          <li><a href="https://skilvul.com" id="link"><i class="fa-brands fa-whatsapp"></i></i></a></li>
           <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
           <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
           <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
@@ -253,5 +230,8 @@
               <p>Copyright @ 2023 NutriSense</p>
           </div>
   </footer>
-  </body>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/30b2892a0a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</body>
 </html>

@@ -1,38 +1,8 @@
-function popupRun() {
-  window.alert("I'm Sorry, This Page is COOMING SOON");
+// Tambahkan kode JavaScript kalian di file ini
+function popupRun(){
+  alert("Sorry this page is COOMING SOON")
 }
 
-//login function popup
-let modal = document.getElementById("loginModal");
-let btn = document.getElementById("loginBtn");
-let span = document.getElementsByClassName("close")[0];
-
-btn.onclick = function () {
-  modal.style.display = "block";
-};
-
-span.onclick = function () {
-  modal.style.display = "none";
-};
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-const myForm = document.getElementById("my-form");
-
-myForm.innerHTML = `
-  <input type="text" id="name" placeholder="Nama Lengkap">
-  <input type="text" id="city" placeholder="Alamat">
-  <input type="email" id="email" placeholder="Email">
-  <input type="number" id="zip-code" placeholder="Masukan Angka">
-  <input type="checkbox" id="status">
-  <label id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
-  <button id="submit-form">Submit</button>
-  <div id="warning"></div>
-`;
 
 function handleGetFormData() {
   const name = document.getElementById("name").value;
@@ -47,7 +17,7 @@ function isNumber(str) {
   return !isNaN(str) && !isNaN(parseFloat(str));
 }
 
-function checkBoxIsChecked() {
+function checkboxIsChecked() {
   const status = document.getElementById("status");
   if (status.checked) {
     return true;
@@ -57,23 +27,35 @@ function checkBoxIsChecked() {
 }
 
 function validateFormData(formData) {
-  if (formData != null && !isNaN(formData.zipCode) && formData.status.checked) {
+  if (
+    formData &&
+    formData.name &&
+    formData.city &&
+    !isNaN(parseInt(formData.zipCode)) &&
+    document.getElementById("status").checked === true
+  ) {
     return true;
   } else {
     return false;
   }
 }
 
-function submit(event) {
-  event.preventDefault();
+const myForm = document.getElementById("my-form")
+
+function submit() {
   const formData = handleGetFormData();
+
   if (!validateFormData(formData)) {
     const warning = document.getElementById("warning");
-    warning.innerHTML = "Periksa form anda sekali lagi";
+    warning.textContent = "Periksa form anda sekali lagi";
   } else {
     const warning = document.getElementById("warning");
-    warning.innerHTML = "";
+    warning.textContent = "";
+    // myForm.submit();
   }
 }
 
-myForm.addEventListener("submit", submit);
+myForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  submit();
+})
